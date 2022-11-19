@@ -8,26 +8,12 @@
     </div>
     <div class="carousel-inner carouselSize px-5 py-3">
       <div class="carousel-item active">
-        <img
-          src="https://www.worthingtonfordnewcars.com/blogs/2493/wp-content/uploads/2019/04/long-beach-scenic-view-300x168.jpg"
-          class="d-block w-100 img-fluid"
-          alt="https://www.worthingtonfordnewcars.com/blogs/2493/wp-content/uploads/2019/04/long-beach-scenic-view-300x168.jpg">
+        <img src="../Public/HomePage/hotAirBallonLittleBoy.JPG" class="d-block w-100 img-fluid"
+          alt="Hot Air Ballon with a Little Boy">
         <div class="carousel-caption">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://www.worthingtonfordnewcars.com/blogs/2493/wp-content/uploads/2019/04/long-beach-scenic-view-300x168.jpg"
-          class="d-block w-100"
-          alt="https://www.worthingtonfordnewcars.com/blogs/2493/wp-content/uploads/2019/04/long-beach-scenic-view-300x168.jpg">
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://www.worthingtonfordnewcars.com/blogs/2493/wp-content/uploads/2019/04/long-beach-scenic-view-300x168.jpg"
-          class="d-block w-100"
-          alt="https://www.worthingtonfordnewcars.com/blogs/2493/wp-content/uploads/2019/04/long-beach-scenic-view-300x168.jpg">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
@@ -38,15 +24,18 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-
+    {{ pictures }}
   </div>
 </template>
 
 
 <script>
+
 export default {
   setup() {
-    return {}
+    return {
+      // pictures: [{ img: require('../Public/HomePage/littleGirlByTheLake.jpg') }]
+    }
   }
 }
 </script>

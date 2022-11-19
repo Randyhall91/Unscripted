@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg bg-light px-3 pb-4 d-flex justify-content-between">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex align-items-center">
-        <h4>Kiera's Photography</h4>
+        <h4>Skimmed off Reality</h4>
       </div>
     </router-link>
     <div class="navbar-links pe-5" id="navbarText">
