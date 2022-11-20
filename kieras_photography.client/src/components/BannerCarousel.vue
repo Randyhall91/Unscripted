@@ -1,18 +1,30 @@
 <template>
   <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="true">
-    <div class="carousel-indicators">
+    <!-- <div class="carousel-indicators">
       <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+    </div> -->
     <div class="carousel-inner carouselSize px-5 py-3">
       <div class="carousel-item active">
-        <img src="../Public/HomePage/hotAirBallonLittleBoy.JPG" class="d-block w-100 img-fluid"
+        <img src="../Public/HomePage/hotAirBallonLittleBoy.JPG" class="carousel-img img-fluid"
           alt="Hot Air Ballon with a Little Boy">
-        <div class="carousel-caption">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+        <div class="carousel-text">
+          <h1>LifeStyle Family Photography</h1>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="../Public/HomePage/littleGirlBeachMountains.JPG" class="img-fluid"
+          alt="Little Girl at the Beach with Mountains">
+        <div class="carousel-text">
+          <h1>LifeStyle Family Photography</h1>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="../Public/HomePage/littleGirlByTheLake.JPG" class="img-fluid" alt="Little Girl By the Lake">
+        <div class="carousel-text">
+          <h1>LifeStyle Family Photography</h1>
         </div>
       </div>
     </div>
@@ -24,7 +36,6 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-    {{ pictures }}
   </div>
 </template>
 
@@ -44,5 +55,15 @@ export default {
 <style lang="scss" scoped>
 .carouselSize {
   max-height: 80vh;
+}
+
+.carousel-text {
+  position: absolute;
+  right: 15%;
+  top: 30%;
+  left: 15%;
+  color: white;
+  text-shadow: 2px 2px #181818;
+  text-align: center;
 }
 </style>
