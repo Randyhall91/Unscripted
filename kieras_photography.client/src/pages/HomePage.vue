@@ -6,14 +6,14 @@
       </div>
     </div>
     <div class="row d-flex justify-content-center mt-5">
-      <div class="col-6 text-center">
+      <div class="col-lg-6 text-center">
         <p class="tangerine fs-1 bg-grey">
           Photography is an Interpretation of Reality Skimmed off the Surface of Life.
         </p>
       </div>
     </div>
     <div class="row mt-5 pb-5">
-      <div class="col-6 d-flex flex-column justify-content-center">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
         <h2 class="text-center">Why Pick Me?</h2>
         <p class="px-5 fragment">
           I have a passion for getting families photographed in the moment. I want those real smiles, the ones that show
@@ -24,20 +24,20 @@
           water gun or
           snowball battles and tickle fights. Or if you want to go on an adventure, we can do that too. Hiking, swimming
           or just
-          plain exploring. If you want to get professional fun photos of your family having a good time, then you’re in
+          plain exploring. If you want to get professional fun photos of your family having a good time, then you're in
           the right
-          place. When you walk in the room and see these photos on your wall, they will make you smile. You’re welcome!
+          place. When you walk in the room and see these photos on your wall, they will make you smile. You're welcome!
         </p>
       </div>
-      <div class="col-6">
+      <div class="col-lg-6">
         <img class="img-fluid" src="../Public/HomePage/Page/0G8A0090.jpg" alt="Man playing with Child">
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-6">
+      <div class="col-lg-6">
         <img class="img-fluid" src="../Public/HomePage/Page/trees with carvings.JPG" alt="trees with carvings">
       </div>
-      <div class="col-6 d-flex flex-column justify-content-center">
+      <div class="col-lg-6 d-flex flex-column justify-content-center pt-3">
         <h2>Why LifeStyle Photography</h2>
         <p class="px-5 fragment">
           Lifestyle Photography is about capturing families interacting with each other in an artistic way.
@@ -67,11 +67,48 @@
         </p>
       </div>
     </div>
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="col-lg-6">
+        <h2 class="text-center lobster">Let's Chat</h2>
+      </div>
+      <div class="col-12 mt-3">
+        <p class="fragment">
+          Find out when my books open for the next quarter! There are limited spots available! Don't miss out on
+          documenting your family this year!
+        </p>
+
+      </div>
+    </div>
+    <div class="row lets-chat-text p-3 text-center mb-5">
+      <div class="col-3">
+        <div class="border border-dark p-3 bg-white d-flex justify-content-center align-items-center lets-chat-box">
+
+          <p>What is the difference between tradidtional & lifestyle photography</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="border border-dark p-3 bg-white d-flex justify-content-center align-items-center lets-chat-box">
+
+          <p>How to pick the best photographer for your family</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="border border-dark p-3 bg-white d-flex justify-content-center align-items-center lets-chat-box">
+
+          <p>What is lifystyle photography</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="border border-dark p-3 bg-white d-flex justify-content-center align-items-center lets-chat-box">
+
+          <p>What </p>
+        </div>
+      </div>
+    </div>
+
 
 
   </div>
-
-
 </template>
 
 <script>
@@ -86,5 +123,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.lets-chat-text {
+  font-size: large;
+}
 
+.lets-chat-box {
+  min-height: 20vh;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .lets-chat-text {
+    font-size: medium;
+  }
+}
 </style>

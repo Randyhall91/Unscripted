@@ -1,11 +1,11 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light px-3 pb-4 d-flex justify-content-between">
+  <nav class="navbar navbar-expand-lg bg-light ms-3 d-flex align-content-center justify-content-between">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex align-items-center">
         <h4>Skimmed off Reality</h4>
       </div>
     </router-link>
-    <div class="navbar-links pe-5" id="navbarText">
+    <div class="navbar-links navbar-center" id="navbarText">
       <ul class="navbar-nav bg-light text-center">
         <li>
           <router-link :to="{ name: 'Home' }"
@@ -39,7 +39,9 @@
       aria-controls="navbarModal" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <button class="border bg-dark me-5 px-4 py-1 inquire">Contact</button>
+    <router-link :to="{ name: 'Contact' }">
+      <button class="border bg-dark me-5 px-4 py-1 inquire">Contact</button>
+    </router-link>
 
   </nav>
 </template>
@@ -67,6 +69,15 @@ a:hover {
   border-bottom: 2px solid var(--bs-success);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.navbar-center {
+
+  position: relative;
+  top: .5rem;
+  text-align: center;
+  /* margin-top: -50px; */
+  /* margin-left: -100px; */
 }
 
 @media screen and (min-width: 768px) {
