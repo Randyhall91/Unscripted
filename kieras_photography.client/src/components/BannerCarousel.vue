@@ -8,21 +8,21 @@
     </div> -->
     <div class="carousel-inner carouselSize px-5 py-3">
       <div class="carousel-item active">
-        <img src="../Public/HomePage/hotAirBallonLittleBoy.JPG" class="carousel-img img-fluid"
+        <img src="HomePage/hotAirBallonLittleBoy.JPG" class="carousel-img img-fluid"
           alt="Hot Air Ballon with a Little Boy">
         <div class="carousel-text">
           <h1>LifeStyle Family Photography</h1>
         </div>
       </div>
       <div class="carousel-item active">
-        <img src="../Public/HomePage/littleGirlBeachMountains.JPG" class="img-fluid"
+        <img src="HomePage/littleGirlBeachMountains.JPG" class="img-fluid"
           alt="Little Girl at the Beach with Mountains">
         <div class="carousel-text">
           <h1>LifeStyle Family Photography</h1>
         </div>
       </div>
       <div class="carousel-item active">
-        <img src="../Public/HomePage/littleGirlByTheLake.JPG" class="img-fluid" alt="Little Girl By the Lake">
+        <img src="HomePage/littleGirlByTheLake.JPG" class="img-fluid" alt="Little Girl By the Lake">
         <div class="carousel-text">
           <h1>LifeStyle Family Photography</h1>
         </div>

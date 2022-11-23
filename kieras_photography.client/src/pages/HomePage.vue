@@ -30,12 +30,12 @@
         </p>
       </div>
       <div class="col-lg-6">
-        <img class="img-fluid" src="../Public/HomePage/Page/0G8A0090.jpg" alt="Man playing with Child">
+        <img class="img-fluid" src="HomePage/Page/0G8A0090.jpg" alt="Man playing with Child">
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-lg-6">
-        <img class="img-fluid" src="../Public/HomePage/Page/trees with carvings.JPG" alt="trees with carvings">
+        <img class="img-fluid" src="HomePage/Page/trees with carvings.JPG" alt="trees with carvings">
       </div>
       <div class="col-lg-6 d-flex flex-column justify-content-center pt-3">
         <h2>Why LifeStyle Photography</h2>
