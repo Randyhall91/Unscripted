@@ -72,7 +72,7 @@
         <h2 class="text-center lobster">Let's Chat</h2>
       </div>
       <div class="col-12 mt-3">
-        <p class="fragment">
+        <p class="fragment text-center">
           Find out when my books open for the next quarter! There are limited spots available! Don't miss out on
           documenting your family this year!
         </p>
