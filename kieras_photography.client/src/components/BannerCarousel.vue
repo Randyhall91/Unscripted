@@ -1,11 +1,6 @@
 <template>
   <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="true">
-    <!-- <div class="carousel-indicators">
-      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div> -->
+
     <div class="carousel-inner carouselSize px-5 py-3">
       <div class="carousel-item active">
         <img src="HomePage/hotAirBallonLittleBoy.JPG" class="carousel-img img-fluid"
@@ -37,15 +32,19 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <div v-for="p in pictures">test</div>
 </template>
 
 
 <script>
+import { onMounted } from 'vue';
+
 
 export default {
   setup() {
+
     return {
-      // pictures: [{ img: require('../Public/HomePage/littleGirlByTheLake.jpg') }]
+
     }
   }
 }

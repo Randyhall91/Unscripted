@@ -4,6 +4,9 @@
       <div class="col-12">
         <BannerCarousel />
       </div>
+      <div>
+        <UploadPicture />
+      </div>
     </div>
     <div class="row d-flex justify-content-center mt-5">
       <div class="col-lg-6 text-center">
@@ -113,12 +116,13 @@
 
 <script>
 import BannerCarousel from '../components/BannerCarousel.vue';
+import UploadPicture from '../components/UploadPicture.vue.js';
 
 export default {
   setup() {
     return {};
   },
-  components: { BannerCarousel }
+  components: { BannerCarousel, UploadPicture }
 }
 </script>
 
