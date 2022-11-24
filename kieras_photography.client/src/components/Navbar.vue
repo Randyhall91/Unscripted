@@ -1,33 +1,35 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light ms-3 d-flex align-content-center justify-content-between">
+  <nav
+    class="navbar navbar-expand-lg barlow bg-body-bg d-flex align-content-center justify-content-between elevation-2">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
-      <div class="d-flex align-items-center">
-        <h4>Skimmed off Reality</h4>
+      <div class="d-flex align-items-center ms-3">
+        <h1>Skimmed off Reality</h1>
       </div>
     </router-link>
     <div class="navbar-links navbar-center" id="navbarText">
-      <ul class="navbar-nav bg-light text-center">
+      <ul class="navbar-nav text-center">
         <li>
           <router-link :to="{ name: 'Home' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase me-3">
+            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-4">
             Home
           </router-link>
         </li>
         <li>
           <router-link :to="{ name: 'About' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase me-3">
+            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-4">
             About
           </router-link>
         </li>
         <li>
           <router-link :to="{ name: 'Pricing' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase me-3">
+            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-4">
             Pricing
           </router-link>
         </li>
 
         <li>
-          <router-link :to="{ name: 'Blog' }" class="text-dark border-bottom border-dark selectable text-uppercase">
+          <router-link :to="{ name: 'Blog' }"
+            class="text-dark border-bottom border-dark selectable text-uppercase fs-4">
             Blog
           </router-link>
         </li>
@@ -40,7 +42,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <router-link :to="{ name: 'Contact' }">
-      <button class="border bg-dark me-5 px-4 py-1 inquire">Contact</button>
+      <button class="border bg-dark me-5 px-4 py-1 inquire">Lets Chat</button>
     </router-link>
 
   </nav>

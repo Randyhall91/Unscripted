@@ -45,12 +45,21 @@ export default {
   src: local('Lobster'), url(./fonts/LobsterTwo/LobsterTwo-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Barlow";
+  src: local('Barlow'), url(./fonts/Barlow_Condensed/BarlowCondensed-ThinItalic.ttf);
+}
+
 body {
   font-family: "Aboreto";
 }
 
 .tangerine {
   font-family: "Tangerine";
+}
+
+.barlow {
+  font-family: "Barlow";
 }
 
 .lobster {

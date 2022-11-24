@@ -5,12 +5,12 @@
         <BannerCarousel />
       </div>
       <div>
-        <UploadPicture />
+        <!-- <UploadPicture /> -->
       </div>
     </div>
     <div class="row d-flex justify-content-center mt-5">
       <div class="col-lg-6 text-center">
-        <p class="tangerine fs-1 bg-grey">
+        <p class="tangerine fs-1">
           Photography is an Interpretation of Reality Skimmed off the Surface of Life.
         </p>
       </div>
@@ -116,7 +116,7 @@
 
 <script>
 import BannerCarousel from '../components/BannerCarousel.vue';
-import UploadPicture from '../components/UploadPicture.vue.js';
+import UploadPicture from '../components/UploadPicture.vue';
 
 export default {
   setup() {

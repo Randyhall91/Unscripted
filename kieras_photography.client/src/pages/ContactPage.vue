@@ -6,14 +6,14 @@
       </div>
     </div>
     <div class="row d-flex justify-content-center mt-5">
-      <div class="col-lg-4">
+      <div class="col-lg-6">
         <ContactForm />
       </div>
 
     </div>
     <div class="row d-flex justify-content-center mt-5">
       <div class="col-lg-6 text-center">
-        <p class="tangerine fs-3">
+        <p class="tangerine fs-1">
           We live so briefly in time before returning to eternity... We should document every chance we can for the sake
           of those who remain...
         </p>

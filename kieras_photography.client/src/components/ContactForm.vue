@@ -1,7 +1,7 @@
 <template>
   <div class="card border-dark">
     <div class="card-body">
-      <h4 class="card-title">Book a Session</h4>
+      <h4 class="card-title">inquiry form</h4>
       <form @submit="handleSubmit" class="fragment">
         <p>
           <input class="form-check-input" v-model="editable.isFamily" type="checkbox" data-bs-toggle="collapse"
