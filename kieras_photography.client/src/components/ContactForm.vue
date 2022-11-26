@@ -65,7 +65,7 @@
             <label for="familyCount" class="form-label">What are you and your spouses love languages?</label>
             <div class="d-flex">
 
-              <select class="form-select form-select-sm" name="familyCount" id="familyCount">
+              <select class="form-select form-select-sm m-1" name="familyCount" id="familyCount">
                 <option selected>Spouse 1</option>
                 <option value="Words of Affirmation">Words of Affirmation</option>
                 <option value="Quality Time">Quality Time</option>
@@ -73,7 +73,7 @@
                 <option value="Acts of Service">Acts of Service</option>
                 <option value="Physical Touch">Physical Touch</option>
               </select>
-              <select class="form-select form-select-sm" name="familyCount" id="familyCount">
+              <select class="form-select form-select-sm m-1" name="familyCount" id="familyCount">
                 <option selected>Spouse 2</option>
                 <option value="Words of Affirmation">Words of Affirmation</option>
                 <option value="Quality Time">Quality Time</option>

@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 mt-5">
         <BannerCarousel />
       </div>
       <div>
@@ -9,15 +9,15 @@
       </div>
     </div>
     <div class="row d-flex justify-content-center mt-5">
-      <div class="col-lg-6 text-center">
-        <p class="tangerine fs-1">
+      <div class="col-lg-12 text-center">
+        <p class="barlow fs-1">
           Photography is an Interpretation of Reality Skimmed off the Surface of Life.
         </p>
       </div>
     </div>
-    <div class="row mt-5 pb-5">
+    <div class="row mt-5 pb-5 pe-3">
       <div class="col-lg-6 d-flex flex-column justify-content-center">
-        <h2 class="text-center">Why Pick Me?</h2>
+        <h2>Why Pick Me?</h2>
         <p class="px-5 fragment">
           I have a passion for getting families photographed in the moment. I want those real smiles, the ones that show
           the love
@@ -32,13 +32,14 @@
           place. When you walk in the room and see these photos on your wall, they will make you smile. You're welcome!
         </p>
       </div>
-      <div class="col-lg-6">
-        <img class="img-fluid" src="HomePage/Page/0G8A0090.jpg" alt="Man playing with Child">
+      <div class="col-lg-6 kiera-pic">
+        <!-- <img class="img-fluid kiera-height" src="HomePage/Page/women laughing.jpg" alt="Man playing with Child"> -->
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-lg-6">
-        <img class="img-fluid" src="HomePage/Page/trees with carvings.JPG" alt="trees with carvings">
+        <img class="img-fluid" src="HomePage/Page/0G8A0090.jpg" alt="Man playing with Child">
+        <!-- <img class="img-fluid" src="HomePage/Page/trees with carvings.JPG" alt="trees with carvings"> -->
       </div>
       <div class="col-lg-6 d-flex flex-column justify-content-center pt-3">
         <h2>Why LifeStyle Photography</h2>
@@ -127,6 +128,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.kiera-pic {
+  background-image: url('HomePage/Page/women laughing.jpg');
+  height: 70vh;
+  background-position: 3rem;
+  background-position-x: -10rem;
+  background-position-y: -24rem;
+}
+
 .lets-chat-text {
   font-size: large;
 }

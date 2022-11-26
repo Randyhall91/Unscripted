@@ -1,25 +1,39 @@
 <template>
   <div class="container-fluid">
-    <div class="row full-page-height">
-      <div class="col-lg-3 img-1">
+    <!-- <div class="row full-page-height">
+      <div class="col-lg-4 img-1">
         <img class="img-fluid" src="PricingPage/0G8A0119.jpg" alt="father and daughter">
       </div>
-      <div class="col-lg-2 img-2">
+      <div class="col-lg-3 img-2">
         <img class="img-fluid" src="PricingPage/0G8A0092.jpg" alt="father and daughter">
       </div>
       <div class="col-lg-4 investment-text">
-        <p class="fs-1">Investment</p>
+        <h1>Investment</h1>
       </div>
-      <div class="col-lg-2 img-3">
+      <div class="col-lg-3 img-3">
         <img class="img-fluid" src="PricingPage/0G8A0116.jpg" alt="father and daughter">
       </div>
-      <div class="col-lg-2 img-4">
+      <div class="col-lg-3 img-4">
         <img class="img-fluid" src="PricingPage/0G8A0121.jpg" alt="father and daughter">
       </div>
 
+    </div> -->
+    <div class="row">
+      <div class="col-lg-6 order-1 text-center d-flex align-items-center justify-content-center">
+        <h1>Investment</h1>
+      </div>
+      <div class="col-lg-6 p-5 order-2">
+
+        <img class="img-fluid p-5" src="PricingPage/0G8A0119.jpg" alt="father and daughter">
+
+      </div>
     </div>
-    <div class="row d-flex justify-content-center">
-      <div class="col-lg-8 p-3">
+    <div class="row">
+      <div class="col-lg-6 order-lg-1 order-2 px-5">
+        <div class="mobile-spacing"></div>
+        <img class="img-fluid px-5" src="PricingPage/0G8A0121.jpg" alt="father and daughter">
+      </div>
+      <div class="col-lg-6 order-lg-2 order-1 px-3">
         <p class="fragment fs-4">
           Getting lifestyle photos taken is not just an investment in money and time but also an investment in memories
           for your
@@ -45,6 +59,41 @@
         </p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <h2><strong>Family Photography Session</strong></h2>
+        <h3>Keep in mind space is limited</h3>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-6 text-center mt-3">
+        <h3>Packages start at</h3>
+        <h3>$625</h3>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center mt-2">
+
+      <div class="col-6">
+        <h5 class="text-center">All Packages Include:</h5>
+        <p class="ps-2 fs-4">-location scouting</p>
+        <p class="ps-2 fs-4">-welcome guide</p>
+        <p class="ps-2 fs-4">-digital fiels of photos</p>
+        <p class="ps-2 fs-4">-phone call prior to session</p>
+        <p class="ps-2 fs-4">-coffee date for photo delivery</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <h2>Want to see all package options or have more questions. Send me a message</h2>
+        <router-link :to="{ name: 'Contact' }">
+          <button class="border bg-dark fs-1 mt-3">Lets Chat</button>
+        </router-link>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 p-0 landscape">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -59,6 +108,18 @@ export default {
 
 
 <style lang="scss" scoped>
+h1 {
+  font-size: 4rem
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  // font-size: 2rem;
+}
+
 .full-page-height {
   height: 110vh;
 }
@@ -71,25 +132,39 @@ export default {
 
 .img-1 {
   position: absolute;
-  top: 15rem;
-  left: 10rem;
+  top: 10rem;
+  left: 6rem;
 }
 
 .img-2 {
   position: absolute;
-  top: 11rem;
+  top: 8rem;
   right: 6rem;
 }
 
 .img-3 {
   position: absolute;
-  bottom: -2rem;
-  left: 21rem;
+  bottom: -9rem;
+  left: 16rem;
 }
 
 .img-4 {
   position: absolute;
-  bottom: -6rem;
+  bottom: -8rem;
   right: 21rem;
+}
+
+.landscape {
+  background-image: url('PricingPage/rolling hills.jpg');
+  background-position: left;
+  min-height: 80vh;
+  width: 100vw;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile-spacing {
+    height: 3rem;
+  }
 }
 </style>

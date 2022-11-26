@@ -20,8 +20,8 @@
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-12">
-        <img class="landscape" src="ContactPage/bird on telephone line.jpg" alt="">
+      <div class="col-12 p-0">
+        <img class="landscape" src="foothills.jpg" alt="">
       </div>
     </div>
     <div class="row">
