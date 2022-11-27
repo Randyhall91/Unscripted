@@ -5,13 +5,14 @@
   <main>
     <router-view />
   </main>
-  <NavbarMobileModal />
+  <!-- <NavbarMobileModal /> -->
 </template>
 
 <script>
 import { computed } from 'vue'
 import { AppState } from './AppState'
 import Navbar from './components/Navbar.vue'
+// import NavbarMobileModal from './components/NavbarMobileModal.vue'
 
 export default {
   setup() {

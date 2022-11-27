@@ -43,7 +43,7 @@
 
     </div>
     <div></div>
-    <button class="navbar-toggler mobile-drop" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal"
+    <button class="navbar-toggler mobile-right" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal"
       aria-controls="navbarModal" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -52,15 +52,17 @@
     </router-link>
 
   </nav>
+  <NavbarMobileModal />
 </template>
 
 <script>
 import Login from './Login.vue'
+import NavbarMobileModal from './NavbarMobileModal.vue';
 export default {
   setup() {
     return {}
   },
-  components: { Login }
+  components: { Login, NavbarMobileModal }
 }
 </script>
 
@@ -101,7 +103,7 @@ a:hover {
     height: 64px;
   }
 
-  .mobile-drop {
+  .mobile-right {
     position: absolute;
     right: 1rem;
   }

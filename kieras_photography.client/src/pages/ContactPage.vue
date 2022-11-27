@@ -13,7 +13,7 @@
     </div>
     <div class="row d-flex justify-content-center mt-5">
       <div class="col-lg-6 text-center">
-        <p class="tangerine fs-1">
+        <p class="barlow fs-1">
           We live so briefly in time before returning to eternity... We should document every chance we can for the sake
           of those who remain...
         </p>
@@ -21,42 +21,24 @@
     </div>
     <div class="row mt-5">
       <div class="col-12 p-0">
-        <img class="landscape" src="foothills.jpg" alt="">
+        <img class="landscape" src="foothills.jpg" alt="foothills">
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-3"></div>
-      <!-- TODO Insert Blog tiles here -->
-    </div>
+      TODO Insert 4 Blog tiles here
+    </div> -->
   </div>
 </template>
 
 
 <script>
 import { ref } from 'vue';
+import ContactForm from '../components/ContactForm.vue';
 import { formService } from '../services/FormService.js'
 // import { VideoPlayer } from '../components/VideoPlayer.vue'
 export default {
-  // name: 'Video',
-  // components: {
-  //   VideoPlayer
-  // },
-  // data() {
-  //   return {
-  //     videoOptions: {
-  //       autoplay: false,
-  //       controls: true,
-  //       sources: [
-  //         {
-  //           src:
-  //             '/path/to/video.mp4',
-  //           type: 'video/mp4'
-  //         }
-  //       ]
-  //     }
-  //   };
-  // },
-
+  components: { ContactForm }
 }
 </script>
 
@@ -64,7 +46,7 @@ export default {
 <style lang="scss" scoped>
 .landscape {
   max-height: 40vh;
-  min-width: 100vw;
+  width: 100%;
   object-fit: cover;
 }
 </style>

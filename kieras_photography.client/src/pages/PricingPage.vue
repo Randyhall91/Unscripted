@@ -1,23 +1,6 @@
 <template>
   <div class="container-fluid">
-    <!-- <div class="row full-page-height">
-      <div class="col-lg-4 img-1">
-        <img class="img-fluid" src="PricingPage/0G8A0119.jpg" alt="father and daughter">
-      </div>
-      <div class="col-lg-3 img-2">
-        <img class="img-fluid" src="PricingPage/0G8A0092.jpg" alt="father and daughter">
-      </div>
-      <div class="col-lg-4 investment-text">
-        <h1>Investment</h1>
-      </div>
-      <div class="col-lg-3 img-3">
-        <img class="img-fluid" src="PricingPage/0G8A0116.jpg" alt="father and daughter">
-      </div>
-      <div class="col-lg-3 img-4">
-        <img class="img-fluid" src="PricingPage/0G8A0121.jpg" alt="father and daughter">
-      </div>
 
-    </div> -->
     <div class="row">
       <div class="col-lg-6 order-1 text-center d-flex align-items-center justify-content-center">
         <h1>Investment</h1>
@@ -116,10 +99,6 @@ h2 {
   font-size: 2.5rem;
 }
 
-h3 {
-  // font-size: 2rem;
-}
-
 .full-page-height {
   height: 110vh;
 }
@@ -128,30 +107,6 @@ h3 {
   position: absolute;
   top: 40%;
   left: 43%;
-}
-
-.img-1 {
-  position: absolute;
-  top: 10rem;
-  left: 6rem;
-}
-
-.img-2 {
-  position: absolute;
-  top: 8rem;
-  right: 6rem;
-}
-
-.img-3 {
-  position: absolute;
-  bottom: -9rem;
-  left: 16rem;
-}
-
-.img-4 {
-  position: absolute;
-  bottom: -8rem;
-  right: 21rem;
 }
 
 .landscape {

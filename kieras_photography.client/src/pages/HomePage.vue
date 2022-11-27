@@ -4,9 +4,6 @@
       <div class="col-12 mt-5">
         <BannerCarousel />
       </div>
-      <div>
-        <!-- <UploadPicture /> -->
-      </div>
     </div>
     <div class="row d-flex justify-content-center mt-5">
       <div class="col-lg-12 text-center">
