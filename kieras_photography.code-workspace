@@ -47,7 +47,13 @@
       "titleBar.activeBackground": "#05620d",
       "titleBar.activeForeground": "#e7e7e7",
       "titleBar.inactiveBackground": "#05620d99",
-      "titleBar.inactiveForeground": "#e7e7e799"
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "activityBar.activeBackground": "#079213",
+      "activityBar.background": "#079213",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#200cf3",
+      "activityBarBadge.foreground": "#e7e7e7"
     },
     "peacock.color": "#05620d"
   }
