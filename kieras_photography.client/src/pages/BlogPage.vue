@@ -1,27 +1,38 @@
 <template>
-  <h1>Blog Page</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-3" v-for="post in posts">
+        <BlogCard :p="post" :key="post" />
+      </div>
+    </div>
+  </div>
 </template>
 
 
 <script>
 import { blogService } from "../services/BlogService";
 import Pop from "../utils/Pop";
-import {onMounted} from "vue";
+import { onMounted } from "vue";
+import { AppState } from "../AppState.js";
+import { computed } from "@vue/reactivity";
+import { baseURL } from "../env.js";
 
 export default {
   setup() {
-    
-    async function getBlogPosts(){
+
+    async function getBlogPosts() {
       try {
         await blogService.GetBlogPosts()
       } catch (error) {
         Pop.error('[getBlogPosts]', error)
       }
     }
-    onMounted(()=>{
+    onMounted(() => {
       getBlogPosts()
     })
-    return {}
+    return {
+      posts: computed(() => AppState.posts)
+    }
   }
 }
 </script>

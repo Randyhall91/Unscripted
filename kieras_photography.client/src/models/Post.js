@@ -1,13 +1,14 @@
+import { Imgs } from "./Imgs.js"
 
 
 
-export class Post{
-  constructor(data){
-    this.id = data.attributes.Post.id
-    this.title = data.attributes.Post.Title
-    this.content = data.attributes.Post.Content
-    this.headerImg = [0].attributes.Post[0].Header.data.attributes.formats.medium.url
-    // this.additionalImgs = data[0].attributes.Post[0].AdditionalImgs.data.attributes.formats.medium
-    
+export class Post {
+  constructor(data) {
+    this.id = data.id
+    this.title = data.attributes.title
+    this.body = data.attributes.body
+    this.headerImg = data.attributes.headerImg.data.attributes.formats.medium
+    this.extraImgs = data.attributes.extraImgs.data.map(img => new Imgs(img))
+
   }
 }
