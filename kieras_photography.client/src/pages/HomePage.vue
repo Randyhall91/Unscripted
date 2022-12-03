@@ -113,12 +113,30 @@
 </template>
 
 <script>
+import { computed } from '@vue/reactivity';
+import { pageContentService } from '../services/PageContentService.js';
+import { onMounted } from 'vue';
+import { AppState } from '../AppState.js';
 import BannerCarousel from '../components/BannerCarousel.vue';
 import UploadPicture from '../components/UploadPicture.vue';
+import Pop from '../utils/Pop.js';
 
 export default {
   setup() {
-    return {};
+    async function getHomePageContent() {
+      try {
+        await pageContentService.getHomePageContent()
+      }
+      catch (error) {
+        Pop.error('[getHomePageContent]', error)
+      }
+    }
+    onMounted(() => {
+      getHomePageContent()
+    })
+    return {
+      home: computed(() => AppState.homePage)
+    };
   },
   components: { BannerCarousel, UploadPicture }
 }

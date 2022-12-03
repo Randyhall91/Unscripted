@@ -9,4 +9,6 @@ export const AppState = reactive({
   /** @type {import('./models/Post.js').Post} */
   posts: [],
   activePost: null,
+  portfolioImgs: [],
+  homePage: [],
 })

@@ -11,7 +11,6 @@
 <script>
 import { baseURL } from '../env.js';
 import { Post } from '../models/Post.js';
-import { blogService } from '../services/BlogService.js';
 
 export default {
   props: {

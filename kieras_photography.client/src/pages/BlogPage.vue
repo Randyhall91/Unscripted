@@ -15,7 +15,6 @@ import Pop from "../utils/Pop";
 import { onMounted } from "vue";
 import { AppState } from "../AppState.js";
 import { computed } from "@vue/reactivity";
-import { baseURL } from "../env.js";
 
 export default {
   setup() {

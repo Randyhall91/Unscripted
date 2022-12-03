@@ -1,7 +1,29 @@
 <template>
-  <div class="component">
-    {{ post }}
-
+  <div v-if="post" class="container">
+    <div class="row mt-5">
+      <div class="col-12 d-flex justify-content-center">
+        <img :src="baseURL + post.headerImg.url" :alt="post.headerImg.name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h1>
+          {{ post.title }}
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p>
+          {{ post.body }}
+        </p>
+      </div>
+      <div class="col-6">
+        <div v-for="img in post.extraImgs">
+          <img class="img-fluid mb-2" :src="baseURL + img.medium.url" :alt="img.medium.name">
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -11,6 +33,9 @@ import { computed } from '@vue/reactivity';
 import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { AppState } from '../AppState.js';
+import { baseURL } from '../env.js';
+import { blogService } from '../services/BlogService.js';
+import Pop from '../utils/Pop.js';
 
 export default {
   setup() {
@@ -28,7 +53,8 @@ export default {
       setActivePost()
     })
     return {
-      post: computed(() => AppState.activePost)
+      post: computed(() => AppState.activePost),
+      baseURL
 
     }
   }

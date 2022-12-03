@@ -1,4 +1,3 @@
-import { application } from "express";
 import { AppState } from "../AppState.js";
 import { Post } from "../models/Post";
 import { api } from "./AxiosService"

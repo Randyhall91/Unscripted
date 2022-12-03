@@ -1,14 +1,38 @@
 <template>
-  <div class="about">
-    <h1>This is the about page</h1>
+  <div class="container">
+    <div class="row mt-5">
+      <div v-for="img in portfolioImgs" class="col-3 p-3 mb-3">
+        <img class="img-fluid" :src="(baseURL + img.url)" :alt="img.name">
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import { computed } from '@vue/reactivity'
+import { onMounted } from 'vue'
+import { AppState } from '../AppState.js'
+import { baseURL } from '../env.js'
+import { portfolioService } from '../services/PortfolioService.js'
+import Pop from '../utils/Pop.js'
+
 export default {
   setup() {
-    return {
+    async function getPortfolio() {
+      try {
+        await portfolioService.getPortfolio()
 
+      }
+      catch (error) {
+        Pop.error('[getPortfolio]', error)
+      }
+    }
+    onMounted(() => {
+      getPortfolio()
+    })
+    return {
+      baseURL,
+      portfolioImgs: computed(() => AppState.portfolioImgs)
     }
   }
 }
