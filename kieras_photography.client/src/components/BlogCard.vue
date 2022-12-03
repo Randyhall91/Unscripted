@@ -1,15 +1,17 @@
 <template>
-  <div class="card text-white card-bg" :style="background: url('http://localhost:1337' + p.headerImg.url)">
-    <!-- <img class="card-img card-height" :src="'http://localhost:1337' + p.headerImg.url" :alt="p.headerImg.name"> -->
-    <div class="card-body">
+  <router-link :to="{ name: 'BlogPost', params: { id: p.id } }">
+    <div class="card text-white card-bg">
+      <img class="card-img card-height" @click="setActivePost" :src="baseURL + p.headerImg.url" :alt="p.headerImg.name">
       <h4 class="card-title bg-text">{{ p.title }}</h4>
     </div>
-  </div>
+  </router-link>
 </template>
 
 
 <script>
+import { baseURL } from '../env.js';
 import { Post } from '../models/Post.js';
+import { blogService } from '../services/BlogService.js';
 
 export default {
   props: {
@@ -17,17 +19,19 @@ export default {
   },
   setup() {
     return {
-      compu
+      baseURL,
+
     }
   }
 }
+
 </script>
 
 
 <style lang="scss" scoped>
-// .card-bg {
-//   background-image: url('http://localhost:1337' +p.headerImg.url);
-// }
+.card-bg {
+  position: relative;
+}
 
 .bg-text {
   background-color: rgb(0, 0, 0);

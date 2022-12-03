@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-3" v-for="post in posts">
         <BlogCard :p="post" :key="post" />
       </div>
