@@ -11,5 +11,5 @@ export const AppState = reactive({
   activePost: null,
   portfolioImgs: [],
   /** @type {import('./models/Home.js').Home} */
-  homePage: [],
+  homePage: {},
 })
