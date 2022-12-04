@@ -3,14 +3,9 @@
     "name": "kieras_photography",
     "version": "1.0.0",
     "scripts": {
-      "build": "npm run setup:server",
-      "setup:app": "npm run setup:server && npm run setup:client",
+      "build": "npm run setup:client",
       "setup:client": "cd kieras_photography.client && npm i",
-      "setup:server": "cd kieras_photography && npm i",
       "start": "node kieras_photography/index.js"
-    },
-    "engines": {
-      "node": "^14.17.0"
     }
   }
   
