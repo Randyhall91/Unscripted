@@ -13,12 +13,7 @@
             Home
           </router-link>
         </li>
-        <!-- <li>
-          <router-link :to="{ name: 'About' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-2">
-            About
-          </router-link>
-        </li> -->
+
         <li>
           <router-link :to="{ name: 'Pricing' }"
             class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-2">
@@ -56,7 +51,6 @@
 </template>
 
 <script>
-import Login from './Login.vue'
 import NavbarMobileModal from './NavbarMobileModal.vue';
 export default {
   setup() {
