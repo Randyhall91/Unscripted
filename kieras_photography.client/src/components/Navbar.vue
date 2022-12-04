@@ -56,7 +56,7 @@ export default {
   setup() {
     return {}
   },
-  components: { Login, NavbarMobileModal }
+  components: { NavbarMobileModal }
 }
 </script>
 
