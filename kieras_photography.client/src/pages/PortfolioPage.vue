@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row mt-5">
-      <div v-for="img in portfolioImgs" class="col-3 p-3 mb-3">
+      <div v-for="img in portfolioImgs" class="col-lg-4 p-3 mb-3">
         <img class="img-fluid" :src="(baseURL + img.url)" :alt="img.name">
       </div>
     </div>

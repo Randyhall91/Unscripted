@@ -15,16 +15,17 @@
                   </p>
                 </router-link>
               </li>
-              <!-- <li class="mb-5 border-bottom border-dark pb-2">
-                <router-link :to="{ name: 'About' }" class="fs-1 text-dark selectable text-uppercase" data-bs-dismiss="modal">
-                  About
+              <li class="mb-5 border-bottom border-dark pb-2">
+                <router-link :to="{ name: 'Blog' }" class="fs-1 text-dark selectable text-uppercase"
+                  data-bs-dismiss="modal">
+                  Blog
                 </router-link>
-              </li> -->
+              </li>
               <li class="mb-5 border-bottom border-dark pb-2">
                 <router-link :to="{ name: 'Pricing' }" class="fs-1 text-dark selectable text-uppercase"
                   data-bs-dismiss="modal">
                   <p class="fs-1 text-dark selectable text-uppercase" data-bs-dismiss="modal">
-                    Investment
+                    Pricing
                   </p>
                 </router-link>
               </li>

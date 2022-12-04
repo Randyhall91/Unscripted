@@ -9,32 +9,32 @@
       <ul class="navbar-nav text-center">
         <li>
           <router-link :to="{ name: 'Home' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-4">
+            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-2">
             Home
           </router-link>
         </li>
         <!-- <li>
           <router-link :to="{ name: 'About' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-4">
+            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-2">
             About
           </router-link>
         </li> -->
         <li>
           <router-link :to="{ name: 'Pricing' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-4">
-            Investment
+            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-2">
+            Pricing
           </router-link>
         </li>
 
         <li>
           <router-link :to="{ name: 'Blog' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-4">
+            class="text-dark border-bottom border-dark selectable text-uppercase me-3 fs-2">
             Blog
           </router-link>
         </li>
         <li>
           <router-link :to="{ name: 'Portfolio' }"
-            class="text-dark border-bottom border-dark selectable text-uppercase fs-4">
+            class="text-dark border-bottom border-dark selectable text-uppercase fs-2">
             Portfolio
           </router-link>
         </li>
@@ -67,6 +67,10 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 4rem;
+}
+
 .lets-chat {
   position: absolute;
   right: 1rem;

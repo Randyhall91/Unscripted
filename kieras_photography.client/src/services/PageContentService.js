@@ -1,5 +1,6 @@
-import { HomePage } from "../models/HomePage.js";
-import { api } from "./AxiosService.js"
+import { AppState } from "../AppState.js";
+import { Home } from "../models/Home.js";
+import { api } from "./AxiosService.js";
 
 
 
@@ -11,7 +12,9 @@ class PageContentService {
       params:
         { 'populate': "*" },
     })
-    console.log(new HomePage(res.data.data));
+    // console.log(res.data.data);
+    console.log(new Home(res.data.data[0]));
+    AppState.homePage = new Home(res.data.data[0])
   }
 }
 
