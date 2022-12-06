@@ -2,16 +2,15 @@
   <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
     <div class="carousel-inner carouselSize py-3">
-      <div v-for="(img, index) in home.firstCarouselImg" :data-id="index" data-bs-interval="1000"
-        class="carousel-item active">
-        <img :src="(baseURL + img.medium.url)" class="carousel-img img-fit d-block" :alt="img.medium.name">
+      <div v-for="(img, index) in home.firstCarouselImg" :data-id="index" class="carousel-item active">
+        <img :src="(img.medium.url)" class="carousel-img img-fit d-block" :alt="img.medium.name">
         <div class="carousel-text">
           <h1>Treasure Valley</h1>
           <h1>LifeStyle Family Photography</h1>
         </div>
       </div>
-      <div v-for="(img, index) in home.carouselImgs" :data-id="index" data-bs-interval="1000" class="carousel-item">
-        <img :src="(baseURL + img.medium.url)" class="carousel-img img-fit d-block" :alt="img.medium.name">
+      <div v-for="(img, index) in home.carouselImgs" :data-id="index" class="carousel-item">
+        <img :src="(img.medium.url)" class="carousel-img img-fit d-block" :alt="img.medium.name">
         <div class="carousel-text">
           <h1>Treasure Valley</h1>
           <h1>LifeStyle Family Photography</h1>

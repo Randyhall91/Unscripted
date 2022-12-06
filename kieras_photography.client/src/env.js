@@ -1,5 +1,7 @@
 export const dev = window.location.origin.includes('localhost')
 export const baseURL = 'http://localhost:1337'
+
+export const storageURL = 's3.us-west-2.amazonaws.com/unscriptedfamilyphotography'
 export const useSockets = false
 export const domain = ''
 export const clientId = ''

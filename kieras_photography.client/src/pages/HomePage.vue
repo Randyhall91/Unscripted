@@ -22,12 +22,12 @@
       <!-- <div :style="{ backgroundImg: `url(${(baseURL + home.mugshot)})` }" class="col-lg-6 mugshot">
       </div> -->
       <div class="col-lg-6 d-flex justify-content-center">
-        <img class="mugshot" :src="(baseURL + home.mugshot)">
+        <img class="mugshot" :src="home.mugshot">
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-lg-6">
-        <img class="img-fluid" :src="(baseURL + home.lifeStylePicture)">
+        <img class="img-fluid" :src="(home.lifeStylePicture)">
         <!-- <img class="img-fluid" src="HomePage/Page/trees with carvings.JPG" alt="trees with carvings"> -->
       </div>
       <div class="col-lg-6 d-flex flex-column justify-content-center pt-3">
