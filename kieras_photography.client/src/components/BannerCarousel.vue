@@ -27,16 +27,13 @@
 <script>
 import { computed } from '@vue/reactivity';
 import { AppState } from '../AppState.js';
-import { baseURL } from '../env.js';
 
 
 
 export default {
 
   setup() {
-    baseURL
     return {
-      baseURL,
       home: computed(() => AppState.homePage)
 
 

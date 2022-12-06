@@ -1,7 +1,7 @@
 <template>
   <router-link :to="{ name: 'BlogPost', params: { id: p.id } }">
     <div class="card text-white card-bg">
-      <img class="card-img card-height" @click="setActivePost" :src="baseURL + p.headerImg.url" :alt="p.headerImg.name">
+      <img class="card-img card-height" @click="setActivePost" :src="p.headerImg.url" :alt="p.headerImg.name">
       <h4 class="card-title bg-text">{{ p.title }}</h4>
     </div>
   </router-link>
@@ -9,7 +9,6 @@
 
 
 <script>
-import { baseURL } from '../env.js';
 import { Post } from '../models/Post.js';
 
 export default {
@@ -18,7 +17,6 @@ export default {
   },
   setup() {
     return {
-      baseURL,
 
     }
   }
