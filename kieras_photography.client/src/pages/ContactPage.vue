@@ -21,7 +21,6 @@
     </div>
     <div class="row mt-5">
       <div class="col-12 p-0">
-        <img class="landscape" src="foothills.jpg" alt="foothills">
       </div>
     </div>
     <!-- <div class="row">

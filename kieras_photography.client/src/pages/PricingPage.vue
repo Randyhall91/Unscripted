@@ -6,15 +6,11 @@
         <h1>Investment</h1>
       </div>
       <div class="col-lg-6 p-5 order-2">
-
-        <img class="img-fluid p-5" src="PricingPage/0G8A0119.jpg" alt="father and daughter">
-
       </div>
     </div>
     <div class="row">
       <div class="col-lg-6 order-lg-1 order-2 px-5">
         <div class="mobile-spacing"></div>
-        <img class="img-fluid px-5" src="PricingPage/0G8A0121.jpg" alt="father and daughter">
       </div>
       <div class="col-lg-6 order-lg-2 order-1 px-3">
         <p class="fragment fs-4">
@@ -110,7 +106,7 @@ h2 {
 }
 
 .landscape {
-  background-image: url('PricingPage/rolling hills.jpg');
+
   background-position: left;
   min-height: 80vh;
   width: 100vw;
