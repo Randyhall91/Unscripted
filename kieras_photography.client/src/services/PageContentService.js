@@ -12,7 +12,7 @@ class PageContentService {
       params:
         { 'populate': "*" },
     })
-    // console.log(res.data.data);
+    console.log(res.data.data[0]);
     console.log(new Home(res.data.data[0]));
     AppState.homePage = new Home(res.data.data[0])
   }
